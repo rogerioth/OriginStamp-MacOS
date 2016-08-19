@@ -10,6 +10,8 @@ Use cases include proving…
 … a contract has been signed prior to a certain date. 
 … an idea for a patent already existed prior to signing a NDA or prior to a certain date.
 
+![alt tag](https://is1-ssl.mzstatic.com/image/thumb/Purple71/v4/25/b0/de/25b0de03-a5af-e789-12af-0a24b8194641/pr_source.png/0x0ss.jpg)
+
 How does it work?
 
 Trusted timestamping isn’t new. Even before computers existed information could be hashed and the hash could be published in a newspaper. However, OriginStamp.org allows you to anonymously timestamp information in a tamper proof way within seconds at no costs. 

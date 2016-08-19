@@ -1,0 +1,30 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AppSandboxFileAccess (1.0.14)
+  - XCGLogger (3.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - AppSandboxFileAccess
+  - XCGLogger (~> 3.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AppSandboxFileAccess: f3e10b0ba10bbaa6dc6996639ff47836050329c5
+  XCGLogger: d6e196e78940ff6daab17d6917107876f973fa31
+
+PODFILE CHECKSUM: 1b1447ab69709fbe053c0411341dc5805c6897f4
+
+COCOAPODS: 1.0.1

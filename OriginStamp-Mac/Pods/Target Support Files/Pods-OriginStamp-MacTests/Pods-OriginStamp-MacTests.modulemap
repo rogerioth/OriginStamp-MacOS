@@ -1,0 +1,6 @@
+framework module Pods_OriginStamp_MacTests {
+  umbrella header "Pods-OriginStamp-MacTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -21,7 +22,15 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Preferences…" id="BOF-NM-1cW">
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="tapPreferences:" target="Voe-Tx-rLC" id="xII-bS-nQx"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -641,16 +650,16 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OriginStamp_Mac" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="OriginStamp" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -664,18 +673,260 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--OriginStamp-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController title="OriginStamp" id="XfG-lQ-9wD" customClass="ViewController" customModule="OriginStamp_Mac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="373"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Bac-6p-yjP">
+                                <rect key="frame" x="-2" y="243" width="484" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="22u-6P-Mq6"/>
+                                </constraints>
+                                <textFieldCell key="cell" controlSize="mini" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" title="Drop the file here" id="n2E-b4-CiB">
+                                    <font key="font" size="21" name="AndaleMono"/>
+                                    <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="xmJ-vO-cIj" customClass="DragAndDropView" customModule="OriginStamp_Mac" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="147" width="480" height="226"/>
+                            </customView>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="l1i-Ft-8xF">
+                                <rect key="frame" x="-2" y="45" width="484" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="dNf-Z0-pjO"/>
+                                </constraints>
+                                <textFieldCell key="cell" controlSize="mini" selectable="YES" sendsActionOnEndEditing="YES" alignment="left" title="File Size  :" id="Ncc-D1-Y4N">
+                                    <font key="font" size="14" name="AndaleMono"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="B8n-1z-jE9">
+                                <rect key="frame" x="-2" y="6" width="484" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="hrC-vs-1M1"/>
+                                </constraints>
+                                <textFieldCell key="cell" controlSize="mini" lineBreakMode="charWrapping" selectable="YES" sendsActionOnEndEditing="YES" alignment="left" title="File SHA256:" id="3y7-Ot-sTc">
+                                    <font key="font" size="14" name="AndaleMono"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TNi-Wq-Yjs">
+                                <rect key="frame" x="11" y="117" width="218" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="ZjH-cu-M5g"/>
+                                    <constraint firstAttribute="height" constant="15" id="cpS-ga-48E"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundTextured" title="1. Calculate File Hash" bezelStyle="texturedRounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o6f-Rs-296">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <string key="keyEquivalent">1</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="tapCalculateHash:" target="XfG-lQ-9wD" id="Ffh-XG-6pn"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SRF-lA-bj8">
+                                <rect key="frame" x="237" y="117" width="218" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="80c-Ps-Nem"/>
+                                    <constraint firstAttribute="height" constant="15" id="O37-Eh-bxN"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundTextured" title="&gt;&gt; 2. Create OriginStamp" bezelStyle="texturedRounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DS9-j0-MhW">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <string key="keyEquivalent">2</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="tapCreateStamp:" target="XfG-lQ-9wD" id="hKA-Wb-bTV"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fpb-gZ-nft">
+                                <rect key="frame" x="237" y="94" width="218" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="FNB-ZQ-0Cf"/>
+                                    <constraint firstAttribute="width" constant="218" id="dTJ-Wv-LsE"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundTextured" title="&gt;&gt; 3. Check OriginStamp" bezelStyle="texturedRounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sGt-Fz-jSr">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <string key="keyEquivalent">2</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="tapCheckStamp:" target="XfG-lQ-9wD" id="1V1-vM-QnS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="l1i-Ft-8xF" firstAttribute="top" secondItem="SRF-lA-bj8" secondAttribute="bottom" constant="48" id="2Vg-KJ-KGk"/>
+                            <constraint firstItem="xmJ-vO-cIj" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="4p8-n7-1QN"/>
+                            <constraint firstItem="Bac-6p-yjP" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="9hg-17-mXa"/>
+                            <constraint firstAttribute="trailing" secondItem="xmJ-vO-cIj" secondAttribute="trailing" id="Cfd-pv-fXS"/>
+                            <constraint firstAttribute="trailing" secondItem="l1i-Ft-8xF" secondAttribute="trailing" id="LyL-Jo-2p7"/>
+                            <constraint firstItem="l1i-Ft-8xF" firstAttribute="top" secondItem="TNi-Wq-Yjs" secondAttribute="bottom" constant="48" id="MuY-GD-2ze"/>
+                            <constraint firstItem="l1i-Ft-8xF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="SGD-TD-AXA"/>
+                            <constraint firstItem="SRF-lA-bj8" firstAttribute="leading" secondItem="TNi-Wq-Yjs" secondAttribute="trailing" constant="8" id="UHh-gx-g1M"/>
+                            <constraint firstAttribute="trailing" secondItem="Bac-6p-yjP" secondAttribute="trailing" id="YI4-wW-cgE"/>
+                            <constraint firstAttribute="bottom" secondItem="B8n-1z-jE9" secondAttribute="bottom" constant="6" id="cXG-bz-CzE"/>
+                            <constraint firstItem="Bac-6p-yjP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="14" id="d5I-uY-fWp"/>
+                            <constraint firstItem="fpb-gZ-nft" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="237" id="hWZ-5a-qGq"/>
+                            <constraint firstItem="B8n-1z-jE9" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="idS-m6-iVJ"/>
+                            <constraint firstItem="TNi-Wq-Yjs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="11" id="jdK-iC-A0D"/>
+                            <constraint firstItem="xmJ-vO-cIj" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="pPe-PV-A5m"/>
+                            <constraint firstItem="B8n-1z-jE9" firstAttribute="top" secondItem="l1i-Ft-8xF" secondAttribute="bottom" id="sNU-Cg-xTq"/>
+                            <constraint firstItem="l1i-Ft-8xF" firstAttribute="top" secondItem="fpb-gZ-nft" secondAttribute="bottom" constant="25" id="uNc-vn-Fvb"/>
+                            <constraint firstAttribute="trailing" secondItem="B8n-1z-jE9" secondAttribute="trailing" id="y2S-JN-hpH"/>
+                            <constraint firstItem="SRF-lA-bj8" firstAttribute="top" secondItem="xmJ-vO-cIj" secondAttribute="bottom" constant="14" id="y8U-pa-70i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonCalculateHash" destination="TNi-Wq-Yjs" id="9jL-2R-2vi"/>
+                        <outlet property="buttonCreateStamp" destination="SRF-lA-bj8" id="StA-ib-Dty"/>
+                        <outlet property="buttonVerifyStamp" destination="fpb-gZ-nft" id="124-ar-MM9"/>
+                        <outlet property="textFieldFilePath" destination="Bac-6p-yjP" id="8AV-0X-0hW"/>
+                        <outlet property="textFieldFileSize" destination="l1i-Ft-8xF" id="NSG-Co-cRC"/>
+                        <outlet property="textFieldHash" destination="B8n-1z-jE9" id="uBs-DT-9Sg"/>
+                        <segue destination="4mb-pB-MSi" kind="modal" identifier="segueSettings" id="z2M-Pg-fNr"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="706.5"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="nDL-hA-8hZ">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="4mb-pB-MSi" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="API Settings" identifier="" image="IconCode" id="kaQ-ib-BGv"/>
+                        <tabViewItem label="Logs" identifier="" image="IconLog" id="DNj-0h-zuy"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="RRK-2g-ZyN">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <tabViewItems/>
+                    </tabView>
+                    <connections>
+                        <segue destination="Rm9-cT-7El" kind="relationship" relationship="tabItems" id="qht-y7-ehL"/>
+                        <segue destination="v7A-C9-CBn" kind="relationship" relationship="tabItems" id="UON-37-jAG"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="XSr-d7-JQo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="707"/>
+        </scene>
+        <!--API Key-->
+        <scene sceneID="Ule-fY-9B5">
+            <objects>
+                <viewController title="API Key" id="Rm9-cT-7El" customClass="APIViewController" customModule="OriginStamp_Mac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="AMb-An-MLZ">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AVu-yR-87r">
+                                <rect key="frame" x="122" y="183" width="310" height="89"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="To use OriginStamp, create and use your own APIKey. To do so, click on the link below." id="hel-FZ-MCz">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWc-BA-62Q">
+                                <rect key="frame" x="18" y="100" width="67" height="21"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="API Key:" id="FjO-zE-sRZ">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PuS-05-xc1">
+                                <rect key="frame" x="93" y="99" width="337" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Paste your API Key in here" drawsBackground="YES" id="wCq-4d-lxx">
+                                    <font key="font" size="10" name="AndaleMono"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Daz-3M-u5U">
+                                <rect key="frame" x="20" y="183" width="91" height="89"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="RRi-zx-5lX"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QJj-YT-Lwa">
+                                <rect key="frame" x="124" y="141" width="306" height="32"/>
+                                <buttonCell key="cell" type="bevel" title="https://www.originstamp.org/developer" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="ACc-rn-utf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="17"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="tapAPIKey:" target="Rm9-cT-7El" id="nJF-ke-62a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAPIKey" destination="QJj-YT-Lwa" id="Kim-i8-Ltt"/>
+                        <outlet property="txtAPIKey" destination="PuS-05-xc1" id="l6K-AY-YYp"/>
+                    </connections>
+                </viewController>
+                <customObject id="LmP-Gl-PCb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349" y="526"/>
+        </scene>
+        <!--Logs-->
+        <scene sceneID="U25-Cd-KI6">
+            <objects>
+                <viewController title="Logs" id="v7A-C9-CBn" customClass="LogViewController" customModule="OriginStamp_Mac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="jJc-mG-GVX">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65g-fw-TWV">
+                                <rect key="frame" x="24" y="259" width="408" height="21"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="The Log Path is:" id="LKw-W7-bvJ">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ejH-ED-Oj5">
+                                <rect key="frame" x="21" y="163" width="408" height="69"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="[LogFile Path]" id="GYj-C3-fFP">
+                                    <font key="font" size="14" name="AndaleMono"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bX2-LU-IwX">
+                                <rect key="frame" x="17" y="86" width="225" height="32"/>
+                                <buttonCell key="cell" type="push" title="Show current log file" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s1O-Jl-Qqv">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="tapShowLogFile:" target="v7A-C9-CBn" id="cie-N7-dVq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="lblLogFilePath" destination="ejH-ED-Oj5" id="tcX-Z5-Abe"/>
+                    </connections>
+                </viewController>
+                <customObject id="PHp-l9-qKI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349" y="887"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IconCode" width="128" height="128"/>
+        <image name="IconLog" width="128" height="128"/>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+    </resources>
 </document>

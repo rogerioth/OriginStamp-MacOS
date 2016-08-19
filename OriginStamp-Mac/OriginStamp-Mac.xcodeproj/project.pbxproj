@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0305BA8A1D656F9F00296EEB /* LargeFileHasher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305BA891D656F9F00296EEB /* LargeFileHasher.m */; };
+		0305BA8D1D657E5800296EEB /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0305BA8C1D657E5800296EEB /* LogViewController.swift */; };
 		0350FE0C1D5D0C1E0044814E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE0B1D5D0C1E0044814E /* AppDelegate.swift */; };
 		0350FE0E1D5D0C1E0044814E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE0D1D5D0C1E0044814E /* ViewController.swift */; };
 		0350FE101D5D0C1E0044814E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0350FE0F1D5D0C1E0044814E /* Assets.xcassets */; };
 		0350FE131D5D0C1E0044814E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0350FE111D5D0C1E0044814E /* Main.storyboard */; };
 		0350FE1E1D5D0C1E0044814E /* OriginStamp_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE1D1D5D0C1E0044814E /* OriginStamp_MacTests.swift */; };
 		0350FE291D5D0C1F0044814E /* OriginStamp_MacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE281D5D0C1F0044814E /* OriginStamp_MacUITests.swift */; };
+		0350FE381D5D0CED0044814E /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE371D5D0CED0044814E /* SHA256.swift */; };
+		0350FE3F1D5D14950044814E /* DragAndDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE3E1D5D14950044814E /* DragAndDropView.swift */; };
+		0350FE421D5D25220044814E /* NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE411D5D25220044814E /* NSData.swift */; };
+		0350FE441D5D26F80044814E /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE431D5D26F80044814E /* FileSystem.swift */; };
+		0350FE471D5D287A0044814E /* DataLenght.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE461D5D287A0044814E /* DataLenght.swift */; };
+		0350FE491D5D2B120044814E /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350FE481D5D2B120044814E /* DateUtils.swift */; };
+		03D9E21B1D64D71E00F0B8D8 /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9E21A1D64D71E00F0B8D8 /* APIViewController.swift */; };
+		03D9E21D1D65631400F0B8D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9E21C1D65631400F0B8D8 /* Constants.swift */; };
+		258A4595D0092EC75B2A576B /* Pods_OriginStamp_MacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590D241CC35EC4A7CFBE9C1B /* Pods_OriginStamp_MacTests.framework */; };
+		5CE43DABCB2AFA45996DDFF9 /* Pods_OriginStamp_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4CD44B67C4CE0AE99336E8 /* Pods_OriginStamp_Mac.framework */; };
+		A47DAB9F624A2DBDE655E3A9 /* Pods_OriginStamp_MacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E68EC9D797749CF929C7A86 /* Pods_OriginStamp_MacUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0305BA891D656F9F00296EEB /* LargeFileHasher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LargeFileHasher.m; sourceTree = "<group>"; };
+		0305BA8B1D656FAD00296EEB /* LargeFileHasher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargeFileHasher.h; sourceTree = "<group>"; };
+		0305BA8C1D657E5800296EEB /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		0350FE081D5D0C1E0044814E /* OriginStamp-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OriginStamp-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0350FE0B1D5D0C1E0044814E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0350FE0D1D5D0C1E0044814E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +61,25 @@
 		0350FE241D5D0C1F0044814E /* OriginStamp-MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OriginStamp-MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0350FE281D5D0C1F0044814E /* OriginStamp_MacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginStamp_MacUITests.swift; sourceTree = "<group>"; };
 		0350FE2A1D5D0C1F0044814E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0350FE371D5D0CED0044814E /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		0350FE3A1D5D0D780044814E /* OriginStamp-Mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OriginStamp-Mac-Bridging-Header.h"; sourceTree = "<group>"; };
+		0350FE3E1D5D14950044814E /* DragAndDropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragAndDropView.swift; sourceTree = "<group>"; };
+		0350FE411D5D25220044814E /* NSData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSData.swift; sourceTree = "<group>"; };
+		0350FE431D5D26F80044814E /* FileSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
+		0350FE461D5D287A0044814E /* DataLenght.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLenght.swift; sourceTree = "<group>"; };
+		0350FE481D5D2B120044814E /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		03D9E21A1D64D71E00F0B8D8 /* APIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIViewController.swift; sourceTree = "<group>"; };
+		03D9E21C1D65631400F0B8D8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		03ECFB831D6582E10076CB04 /* OriginStamp-Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "OriginStamp-Mac.entitlements"; sourceTree = "<group>"; };
+		251C07184ADCD3CC0CF568AC /* Pods-OriginStamp-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OriginStamp-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OriginStamp-Mac/Pods-OriginStamp-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		2E4CD44B67C4CE0AE99336E8 /* Pods_OriginStamp_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OriginStamp_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD464DA91BB5112160C763A /* Pods-OriginStamp-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OriginStamp-MacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OriginStamp-MacUITests/Pods-OriginStamp-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46258B56B0A3B68F280A1204 /* Pods-OriginStamp-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OriginStamp-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OriginStamp-MacTests/Pods-OriginStamp-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		590D241CC35EC4A7CFBE9C1B /* Pods_OriginStamp_MacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OriginStamp_MacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E68EC9D797749CF929C7A86 /* Pods_OriginStamp_MacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OriginStamp_MacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05DBC0F9B47237062FADD99 /* Pods-OriginStamp-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OriginStamp-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OriginStamp-MacTests/Pods-OriginStamp-MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5899223454F9A2287E39A9F /* Pods-OriginStamp-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OriginStamp-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-OriginStamp-Mac/Pods-OriginStamp-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		D58DB5831DA62CBF700EC1B4 /* Pods-OriginStamp-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OriginStamp-MacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OriginStamp-MacUITests/Pods-OriginStamp-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE43DABCB2AFA45996DDFF9 /* Pods_OriginStamp_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258A4595D0092EC75B2A576B /* Pods_OriginStamp_MacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47DAB9F624A2DBDE655E3A9 /* Pods_OriginStamp_MacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +117,8 @@
 				0350FE1C1D5D0C1E0044814E /* OriginStamp-MacTests */,
 				0350FE271D5D0C1F0044814E /* OriginStamp-MacUITests */,
 				0350FE091D5D0C1E0044814E /* Products */,
+				6E1A3B795DFAC6EB7A00ECBF /* Pods */,
+				2E7ACA2C7FFA3E322E39F9BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +135,18 @@
 		0350FE0A1D5D0C1E0044814E /* OriginStamp-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				03ECFB831D6582E10076CB04 /* OriginStamp-Mac.entitlements */,
+				03D9E2191D64D70100F0B8D8 /* ViewControllers */,
+				0350FE451D5D286E0044814E /* Helpers */,
+				0350FE401D5D25180044814E /* Extensions */,
+				0350FE3D1D5D14870044814E /* Controls */,
+				0350FE361D5D0CDA0044814E /* Hasher */,
 				0350FE0B1D5D0C1E0044814E /* AppDelegate.swift */,
 				0350FE0D1D5D0C1E0044814E /* ViewController.swift */,
 				0350FE0F1D5D0C1E0044814E /* Assets.xcassets */,
 				0350FE111D5D0C1E0044814E /* Main.storyboard */,
 				0350FE141D5D0C1E0044814E /* Info.plist */,
+				0350FE3A1D5D0D780044814E /* OriginStamp-Mac-Bridging-Header.h */,
 			);
 			path = "OriginStamp-Mac";
 			sourceTree = "<group>";
@@ -122,6 +169,75 @@
 			path = "OriginStamp-MacUITests";
 			sourceTree = "<group>";
 		};
+		0350FE361D5D0CDA0044814E /* Hasher */ = {
+			isa = PBXGroup;
+			children = (
+				0350FE371D5D0CED0044814E /* SHA256.swift */,
+				0305BA891D656F9F00296EEB /* LargeFileHasher.m */,
+				0305BA8B1D656FAD00296EEB /* LargeFileHasher.h */,
+			);
+			name = Hasher;
+			sourceTree = "<group>";
+		};
+		0350FE3D1D5D14870044814E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				0350FE3E1D5D14950044814E /* DragAndDropView.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		0350FE401D5D25180044814E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0350FE411D5D25220044814E /* NSData.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		0350FE451D5D286E0044814E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0350FE431D5D26F80044814E /* FileSystem.swift */,
+				0350FE461D5D287A0044814E /* DataLenght.swift */,
+				0350FE481D5D2B120044814E /* DateUtils.swift */,
+				03D9E21C1D65631400F0B8D8 /* Constants.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		03D9E2191D64D70100F0B8D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				03D9E21A1D64D71E00F0B8D8 /* APIViewController.swift */,
+				0305BA8C1D657E5800296EEB /* LogViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2E7ACA2C7FFA3E322E39F9BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E4CD44B67C4CE0AE99336E8 /* Pods_OriginStamp_Mac.framework */,
+				590D241CC35EC4A7CFBE9C1B /* Pods_OriginStamp_MacTests.framework */,
+				6E68EC9D797749CF929C7A86 /* Pods_OriginStamp_MacUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E1A3B795DFAC6EB7A00ECBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				251C07184ADCD3CC0CF568AC /* Pods-OriginStamp-Mac.debug.xcconfig */,
+				B5899223454F9A2287E39A9F /* Pods-OriginStamp-Mac.release.xcconfig */,
+				46258B56B0A3B68F280A1204 /* Pods-OriginStamp-MacTests.debug.xcconfig */,
+				A05DBC0F9B47237062FADD99 /* Pods-OriginStamp-MacTests.release.xcconfig */,
+				D58DB5831DA62CBF700EC1B4 /* Pods-OriginStamp-MacUITests.debug.xcconfig */,
+				3FD464DA91BB5112160C763A /* Pods-OriginStamp-MacUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0350FE2D1D5D0C1F0044814E /* Build configuration list for PBXNativeTarget "OriginStamp-Mac" */;
 			buildPhases = (
+				E27730A1C7F6F60DA837BE2C /* [CP] Check Pods Manifest.lock */,
 				0350FE041D5D0C1E0044814E /* Sources */,
 				0350FE051D5D0C1E0044814E /* Frameworks */,
 				0350FE061D5D0C1E0044814E /* Resources */,
+				256DD18C7094B3F507A98DC5 /* [CP] Embed Pods Frameworks */,
+				B1CF9780271E175FFD6AC269 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0350FE301D5D0C1F0044814E /* Build configuration list for PBXNativeTarget "OriginStamp-MacTests" */;
 			buildPhases = (
+				405EC40B72EFAE3E5E1664D0 /* [CP] Check Pods Manifest.lock */,
 				0350FE151D5D0C1E0044814E /* Sources */,
 				0350FE161D5D0C1E0044814E /* Frameworks */,
 				0350FE171D5D0C1E0044814E /* Resources */,
+				DDEF92E97820A8698D8CC56A /* [CP] Embed Pods Frameworks */,
+				60360412393BBDFB13461F18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0350FE331D5D0C1F0044814E /* Build configuration list for PBXNativeTarget "OriginStamp-MacUITests" */;
 			buildPhases = (
+				BDA47E056032A88BD397996F /* [CP] Check Pods Manifest.lock */,
 				0350FE201D5D0C1F0044814E /* Sources */,
 				0350FE211D5D0C1F0044814E /* Frameworks */,
 				0350FE221D5D0C1F0044814E /* Resources */,
+				085F17E4AC57D6388F5919BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +314,12 @@
 				TargetAttributes = {
 					0350FE071D5D0C1E0044814E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 693YX79L7U;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					0350FE181D5D0C1E0044814E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -247,13 +377,146 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		085F17E4AC57D6388F5919BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OriginStamp-MacUITests/Pods-OriginStamp-MacUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		256DD18C7094B3F507A98DC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OriginStamp-Mac/Pods-OriginStamp-Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		405EC40B72EFAE3E5E1664D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60360412393BBDFB13461F18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OriginStamp-MacTests/Pods-OriginStamp-MacTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1CF9780271E175FFD6AC269 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OriginStamp-Mac/Pods-OriginStamp-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDA47E056032A88BD397996F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEF92E97820A8698D8CC56A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OriginStamp-MacTests/Pods-OriginStamp-MacTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E27730A1C7F6F60DA837BE2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0350FE041D5D0C1E0044814E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0350FE0E1D5D0C1E0044814E /* ViewController.swift in Sources */,
+				0350FE491D5D2B120044814E /* DateUtils.swift in Sources */,
+				0350FE3F1D5D14950044814E /* DragAndDropView.swift in Sources */,
+				0305BA8D1D657E5800296EEB /* LogViewController.swift in Sources */,
 				0350FE0C1D5D0C1E0044814E /* AppDelegate.swift in Sources */,
+				0305BA8A1D656F9F00296EEB /* LargeFileHasher.m in Sources */,
+				0350FE381D5D0CED0044814E /* SHA256.swift in Sources */,
+				03D9E21D1D65631400F0B8D8 /* Constants.swift in Sources */,
+				0350FE471D5D287A0044814E /* DataLenght.swift in Sources */,
+				0350FE441D5D26F80044814E /* FileSystem.swift in Sources */,
+				0350FE421D5D25220044814E /* NSData.swift in Sources */,
+				03D9E21B1D64D71E00F0B8D8 /* APIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,30 +647,46 @@
 		};
 		0350FE2E1D5D0C1F0044814E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251C07184ADCD3CC0CF568AC /* Pods-OriginStamp-Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "OriginStamp-Mac/OriginStamp-Mac.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "OriginStamp-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lirum-Labs.OriginStamp-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OriginStamp-Mac/OriginStamp-Mac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0350FE2F1D5D0C1F0044814E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5899223454F9A2287E39A9F /* Pods-OriginStamp-Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "OriginStamp-Mac/OriginStamp-Mac.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "OriginStamp-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lirum-Labs.OriginStamp-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OriginStamp-Mac/OriginStamp-Mac-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		0350FE311D5D0C1F0044814E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46258B56B0A3B68F280A1204 /* Pods-OriginStamp-MacTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -421,6 +700,7 @@
 		};
 		0350FE321D5D0C1F0044814E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05DBC0F9B47237062FADD99 /* Pods-OriginStamp-MacTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -434,6 +714,7 @@
 		};
 		0350FE341D5D0C1F0044814E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58DB5831DA62CBF700EC1B4 /* Pods-OriginStamp-MacUITests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "OriginStamp-MacUITests/Info.plist";
@@ -446,6 +727,7 @@
 		};
 		0350FE351D5D0C1F0044814E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FD464DA91BB5112160C763A /* Pods-OriginStamp-MacUITests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "OriginStamp-MacUITests/Info.plist";
@@ -475,6 +757,7 @@
 				0350FE2F1D5D0C1F0044814E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0350FE301D5D0C1F0044814E /* Build configuration list for PBXNativeTarget "OriginStamp-MacTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +766,7 @@
 				0350FE321D5D0C1F0044814E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0350FE331D5D0C1F0044814E /* Build configuration list for PBXNativeTarget "OriginStamp-MacUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +775,7 @@
 				0350FE351D5D0C1F0044814E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
